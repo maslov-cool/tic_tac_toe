@@ -16,38 +16,3 @@ make_move(row, col) – который устанавливает значени
 При создании объекта класса должна создаваться новая игра.
 Аргументы row и col метода make_move могут принимать значения от 1 до 3.
 
-Пример
-Ввод	Вывод
-from solution import TicTacToeBoard
-
-board = TicTacToeBoard()
-print(*board.get_field(), sep="\n")
-print(board.make_move(1, 1))
-print(*board.get_field(), sep="\n")
-print(board.make_move(1, 1))
-print(board.make_move(1, 2))
-print(*board.get_field(), sep="\n")
-print(board.make_move(2, 1))
-print(board.make_move(2, 2))
-print(board.make_move(3, 1))
-print(board.make_move(2, 2))
-print(*board.get_field(), sep="\n")
-['-', '-', '-']
-['-', '-', '-']
-['-', '-', '-']
-Продолжаем играть
-['X', '-', '-']
-['-', '-', '-']
-['-', '-', '-']
-Клетка 1, 1 уже занята
-Продолжаем играть
-['X', '0', '-']
-['-', '-', '-']
-['-', '-', '-']
-Продолжаем играть
-Продолжаем играть
-Победил игрок X
-Игра уже завершена
-['X', '0', '-']
-['X', '0', '-']
-['X', '-', '-']
